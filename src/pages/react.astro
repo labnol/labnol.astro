@@ -1,0 +1,21 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { ReactButton } from '../components/ReactButton';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>React Component</title>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>A Simple React Button</h1>
+			<p>What you see below is a React component that was imported into an Astro component.</p>
+			<ReactButton client:load/>
+		</main>
+		<Footer />
+	</body>
+</html>
